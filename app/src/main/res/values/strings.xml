@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dino Dash</string>
+    <string name="new_game">New Game</string>
+    <string name="setting">Settings</string>
+    <string name="high_score">High Score</string>
+    <string name="quit">Quit</string>
+</resources>
