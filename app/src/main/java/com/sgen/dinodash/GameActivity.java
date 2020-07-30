@@ -2,9 +2,12 @@ package com.sgen.dinodash;
 
 import android.graphics.Point;
 import android.os.Bundle;
+import android.view.Window;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import static android.view.WindowManager.LayoutParams.FLAG_FULLSCREEN;
 
 public class GameActivity extends AppCompatActivity {
 
@@ -13,6 +16,10 @@ public class GameActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(FLAG_FULLSCREEN, FLAG_FULLSCREEN);
+        setContentView(R.layout.activity_main);
 
         Point point = new Point();
         getWindowManager().getDefaultDisplay().getSize(point);
@@ -38,5 +45,11 @@ public class GameActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         game.pause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        game.destroy();
     }
 }

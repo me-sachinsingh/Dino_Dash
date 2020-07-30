@@ -6,6 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/button_store"
+        android:layout_width="@dimen/corner_button_size"
+        android:layout_height="@dimen/corner_button_size"
+        android:background="@drawable/icon_rating"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="@dimen/corner_button_size"
+        android:layout_height="@dimen/corner_button_size"
+        android:id="@+id/button_leaderboard"
+        android:background="@drawable/icon_leaderboard"
+        android:layout_marginEnd="5sp"
+        android:layout_marginTop="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,6 +40,7 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textSize="50sp"
+        android:layout_marginBottom="20sp"
         android:layout_gravity="center"/>
 
         <Button
@@ -27,6 +48,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/button_new_game"
             android:text="@string/new_game"
+            android:textColor="#61ee09"
             android:layout_gravity="center"/>
 
         <Button
@@ -34,6 +56,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/button_setting"
             android:text="@string/setting"
+            android:textColor="#c0ba1b"
             android:layout_gravity="center"/>
 
         <Button
@@ -41,6 +64,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/button_high_score"
             android:text="@string/high_score"
+            android:textColor="#2093c0"
             android:layout_gravity="center"/>
 
         <Button
@@ -48,8 +72,28 @@
             android:layout_height="wrap_content"
             android:id="@+id/button_quit"
             android:text="@string/quit"
+            android:textColor="#ff0000"
             android:layout_gravity="center"/>
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/corner_button_size"
+        android:layout_height="@dimen/corner_button_size"
+        android:id="@+id/button_sound"
+        android:layout_marginBottom="5sp"
+        android:layout_marginStart="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:layout_width="@dimen/corner_button_size"
+        android:layout_height="@dimen/corner_button_size"
+        android:id="@+id/button_share"
+        android:background="@drawable/share_icon"
+        android:layout_marginBottom="5sp"
+        android:layout_marginEnd="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

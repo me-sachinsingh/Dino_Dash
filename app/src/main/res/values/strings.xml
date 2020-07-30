@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">Dino Dash</string>
+    <string name="app_id">421512460157</string>
     <string name="new_game">New Game</string>
     <string name="setting">Settings</string>
     <string name="high_score">High Score</string>
+    <string name="score_text">Your High Score</string>
     <string name="quit">Quit</string>
+
+    <string name="signin_other_error">Failed to singIn</string>
+
+    <string name="share_text">Hey Checkout this awesome game! https://play.google.com/store/apps/details?id=com.sgen.dinodash"</string>
 </resources>

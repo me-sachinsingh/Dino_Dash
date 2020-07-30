@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="button_size">300sp</dimen>
+    <dimen name="corner_button_size">50sp</dimen>
     <dimen name="dino_width">90</dimen>
     <dimen name="dino_height">94</dimen>
 </resources>
